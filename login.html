@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+	<script src='assets/js/sweetalert2.min.js'></script>
+	<link rel="stylesheet" href="assets/css/login.css">
+	<script src="assets/js/login.js"></script>
+	<link rel="stylesheet" href="assets/iconfont/iconfont.css">
+</head>
+<body>
+	<div class="container">
+		<!-- logo图标 -->
+		<div class="mylogo"><img src="assets/imgs/nav-logo.png"></div>
+		<!-- 登陆部分 -->
+		<div class="login">
+			<div class="main">
+				<!-- title部分 -->
+				<div class="text">
+					用户登陆
+				</div>
+				<form action="">
+					<!-- 登陆手机号-->
+					<div id="first">
+						<div class="logo" id="logo1" >
+							<label for="phone"> 
+								 	<i class="icon iconfont icon-rentou" ></i>
+							</label> 
+						</div>
+						<input id="phone" type="text" placeholder="用户名" onblur="doPhone()">
+					</div>
+					<p id="first-text">用户名为必填字段</p>
+					<!-- 密码 -->
+					<div id="third">
+						<div class="logo" id="logo3">
+							<label for="password"> 
+								 	 <i class="icon iconfont icon-suo"></i>
+							</label> 
+						</div>
+						<input id="password" type="password" placeholder="密码" onblur="doPassword()">
+						<!-- 眼睛 -->
+						<div class="eye"> <i class="icon iconfont icon-yanjing" onclick="doEye(this)"></i></div>
+					</div>
+					<p id="third-text">密码为必填字段</p>
+					<!-- 验证码 -->
+					<div id="second">
+						<div class="logo" id="logo2" >
+							<label for="num"> 
+								 	<i class="icon iconfont icon-erweima"></i>
+							</label> 
+						</div>
+						<input id="num" type="text" placeholder="验证码" onblur="doNum()">
+						<div id="changenum">wjs9</div>
+						<div id="donum" onclick="setNum()">看不清？换图片</div>
+					</div>
+					<p id="second-text">验证码为必填字段</p>
+					<!-- 提交按钮 -->
+					<div id="btn" onclick="doLogin()">登陆</div>
+
+				</form>
+				<!-- 底部 -->
+				<div id="bottom-text">
+					<p>用户注册</p>
+					<p>忘记密码</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

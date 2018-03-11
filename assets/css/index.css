@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+html,body{
+    height: 100%;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+/* 背景图片 */
+.swiper-two{
+        background: url(../imgs/2.jpg) no-repeat;
+        background-size: cover;
+}
+.swiper-three{
+        background: url(../imgs/3.jpg) no-repeat;
+        background-size: cover;
+}
+.swiper-four{
+        background: url(../imgs/4.jpg) no-repeat;
+        background-size: cover;
+}
+.swiper-five{
+        background: url(../imgs/5.jpg) no-repeat;
+        background-size: cover;
+}
+/* 菜单栏 */
+.wrap{
+    width: 100%;
+    height: 75px;
+    background-color: #d7dadf;
+    position:fixed;
+    top:0;
+    z-index: 99;
+}
+.wrap .content{
+    height: 45px;
+    width: 70%;
+    margin:15px auto;
+    display: flex;
+    justify-content:space-between;
+}
+.wrap .content .logo{
+    height: 45px;
+    width: 150px;
+
+}
+.wrap .content .logo img{
+    width: 100%;
+    height: 100%;
+}
+.wrap .content .nav{
+     height: 45px;
+     width: 50%;
+}
+.wrap .content .nav ul{
+    display: flex;
+    justify-content:space-between;
+    line-height: 45px;
+    color:#676767;
+}
+.wrap .content .logi{
+   height: 45px;
+   padding-top: 7px;
+}
+.wrap .content .logi img{
+    height: 80%;
+}
+.wrap .content .logi a{
+    text-decoration: none;
+    color:#b13e3e;
+    position: relative;
+    bottom:12px;
+}
+/* 滑块二 */
+.swiper-two .logo1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.swiper-two .logo2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
